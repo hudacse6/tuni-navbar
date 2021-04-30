@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		@media all and (min-width: 992px) {
+			.navbar .nav-item .dropdown-menu{ display: none; }
+			.navbar .nav-item:hover .nav-link{   }
+			.navbar .nav-item:hover .dropdown-menu{ display: block; }
+			.navbar .nav-item .dropdown-menu{ margin-top:0; }
+		}
+		.submenu-width {
+
+			width: 800px;
+		}
+		.nav.flex-column li a img, .dropdown-menu li a img{
+			width: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Brand</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+				<ul class="navbar-nav">
+					<li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+					<li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+					<li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover  </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#"> <img src="./icon/8.svg"> item 1</a></li>
+							<li><a class="dropdown-item" href="#"> <img src="./icon/8.svg"> item 2 </a></li>
+							<li><a class="dropdown-item" href="#"> <img src="./icon/8.svg"> item 3 </a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me </a>
+						<div class="dropdown-menu submenu-width">
+							<div class="row p-2">
+								<div class="col-4">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">
+												<img src="./icon/8.svg">
+												A1
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">
+												<img src="./icon/8.svg">
+												A2
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">a3</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">a4</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-4">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">b1</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">b2</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">b3</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">b4</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-4">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">c1</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">c2</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">c3</a>
+										</li>
+										<li class="nav-item">
+											<a class="dropdown-item" href="#">c4</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div> 
+	</nav>
+</body>
+</html>
